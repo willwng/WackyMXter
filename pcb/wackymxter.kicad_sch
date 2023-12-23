@@ -5,120 +5,196 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "ScottoKeebs:MCU_Arduino_Pro_Micro" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (symbol "ScottoKeebs:MCU_Raspberry_Pi_Pico" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 0 0)
-        (effects (font (size 1.524 1.524)))
+        (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Arduino_Pro_Micro" (at 0 -19.05 0)
-        (effects (font (size 1.524 1.524)))
+      (property "Value" "Raspberry_Pi_Pico" (at 0 27.94 0)
+        (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "ScottoKeebs_MCU:Arduino_Pro_Micro" (at 0 -22.86 0)
-        (effects (font (size 1.524 1.524)) hide)
+      (property "Footprint" "ScottoKeebs_MCU:Raspberry_Pi_Pico" (at 0 30.48 0)
+        (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (at 26.67 -63.5 90)
-        (effects (font (size 1.524 1.524)) hide)
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "MCU_Arduino_Pro_Micro_0_1"
-        (rectangle (start -10.16 16.51) (end 10.16 -16.51)
-          (stroke (width 0) (type solid))
-          (fill (type none))
+      (symbol "MCU_Raspberry_Pi_Pico_0_1"
+        (rectangle (start -12.7 26.67) (end 12.7 -26.67)
+          (stroke (width 0) (type default))
+          (fill (type background))
         )
       )
-      (symbol "MCU_Arduino_Pro_Micro_1_1"
-        (pin input line (at -15.24 13.97 0) (length 5.08)
-          (name "TX0/PD3" (effects (font (size 1.27 1.27))))
+      (symbol "MCU_Raspberry_Pi_Pico_1_1"
+        (pin bidirectional line (at -15.24 24.13 0) (length 2.54)
+          (name "GPIO0" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 -8.89 0) (length 5.08)
-          (name "7/PE6" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 1.27 0) (length 2.54)
+          (name "GPIO7" (effects (font (size 1.27 1.27))))
           (number "10" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 -11.43 0) (length 5.08)
-          (name "8/PB4" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 -1.27 0) (length 2.54)
+          (name "GPIO8" (effects (font (size 1.27 1.27))))
           (number "11" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 -13.97 0) (length 5.08)
-          (name "9/PB5" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 -3.81 0) (length 2.54)
+          (name "GPIO9" (effects (font (size 1.27 1.27))))
           (number "12" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 -13.97 180) (length 5.08)
-          (name "10/PB6" (effects (font (size 1.27 1.27))))
+        (pin power_in line (at -15.24 -6.35 0) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
           (number "13" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 -11.43 180) (length 5.08)
-          (name "16/PB2" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 -8.89 0) (length 2.54)
+          (name "GPIO10" (effects (font (size 1.27 1.27))))
           (number "14" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 -8.89 180) (length 5.08)
-          (name "14/PB3" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 -11.43 0) (length 2.54)
+          (name "GPIO11" (effects (font (size 1.27 1.27))))
           (number "15" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 -6.35 180) (length 5.08)
-          (name "15/PB1" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 -13.97 0) (length 2.54)
+          (name "GPIO12" (effects (font (size 1.27 1.27))))
           (number "16" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 -3.81 180) (length 5.08)
-          (name "A0/PF7" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 -16.51 0) (length 2.54)
+          (name "GPIO13" (effects (font (size 1.27 1.27))))
           (number "17" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 -1.27 180) (length 5.08)
-          (name "A1/PF6" (effects (font (size 1.27 1.27))))
+        (pin power_in line (at -15.24 -19.05 0) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
           (number "18" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 1.27 180) (length 5.08)
-          (name "A2/PF5" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 -21.59 0) (length 2.54)
+          (name "GPIO14" (effects (font (size 1.27 1.27))))
           (number "19" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 11.43 0) (length 5.08)
-          (name "RX1/PD2" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 21.59 0) (length 2.54)
+          (name "GPIO1" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 3.81 180) (length 5.08)
-          (name "A3/PF4" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 -24.13 0) (length 2.54)
+          (name "GPIO15" (effects (font (size 1.27 1.27))))
           (number "20" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 6.35 180) (length 5.08)
-          (name "VCC" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at 15.24 -24.13 180) (length 2.54)
+          (name "GPIO16" (effects (font (size 1.27 1.27))))
           (number "21" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 8.89 180) (length 5.08)
-          (name "RST" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at 15.24 -21.59 180) (length 2.54)
+          (name "GPIO17" (effects (font (size 1.27 1.27))))
           (number "22" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 11.43 180) (length 5.08)
+        (pin power_in line (at 15.24 -19.05 180) (length 2.54)
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "23" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at 15.24 13.97 180) (length 5.08)
-          (name "RAW" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at 15.24 -16.51 180) (length 2.54)
+          (name "GPIO18" (effects (font (size 1.27 1.27))))
           (number "24" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 8.89 0) (length 5.08)
+        (pin bidirectional line (at 15.24 -13.97 180) (length 2.54)
+          (name "GPIO19" (effects (font (size 1.27 1.27))))
+          (number "25" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -11.43 180) (length 2.54)
+          (name "GPIO20" (effects (font (size 1.27 1.27))))
+          (number "26" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -8.89 180) (length 2.54)
+          (name "GPIO21" (effects (font (size 1.27 1.27))))
+          (number "27" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 15.24 -6.35 180) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "28" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 -3.81 180) (length 2.54)
+          (name "GPIO22" (effects (font (size 1.27 1.27))))
+          (number "29" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at -15.24 19.05 0) (length 2.54)
           (name "GND" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 6.35 0) (length 5.08)
+        (pin input line (at 15.24 -1.27 180) (length 2.54)
+          (name "RUN" (effects (font (size 1.27 1.27))))
+          (number "30" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 1.27 180) (length 2.54)
+          (name "GPIO26_ADC0" (effects (font (size 1.27 1.27))))
+          (number "31" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 3.81 180) (length 2.54)
+          (name "GPIO27_ADC1" (effects (font (size 1.27 1.27))))
+          (number "32" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 15.24 6.35 180) (length 2.54)
+          (name "AGND" (effects (font (size 1.27 1.27))))
+          (number "33" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 8.89 180) (length 2.54)
+          (name "GPIO28_ADC2" (effects (font (size 1.27 1.27))))
+          (number "34" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 15.24 11.43 180) (length 2.54)
+          (name "ADC_VREF" (effects (font (size 1.27 1.27))))
+          (number "35" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 15.24 13.97 180) (length 2.54)
+          (name "3V3" (effects (font (size 1.27 1.27))))
+          (number "36" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 15.24 16.51 180) (length 2.54)
+          (name "3V3_EN" (effects (font (size 1.27 1.27))))
+          (number "37" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 15.24 19.05 180) (length 2.54)
           (name "GND" (effects (font (size 1.27 1.27))))
+          (number "38" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 15.24 21.59 180) (length 2.54)
+          (name "VSYS" (effects (font (size 1.27 1.27))))
+          (number "39" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at -15.24 16.51 0) (length 2.54)
+          (name "GPIO2" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 3.81 0) (length 5.08)
-          (name "2/PD1" (effects (font (size 1.27 1.27))))
+        (pin power_in line (at 15.24 24.13 180) (length 2.54)
+          (name "VBUS" (effects (font (size 1.27 1.27))))
+          (number "40" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -2.54 -29.21 90) (length 2.54)
+          (name "SWCLK" (effects (font (size 1.27 1.27))))
+          (number "41" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 0 -29.21 90) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "42" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 2.54 -29.21 90) (length 2.54)
+          (name "SWDIO" (effects (font (size 1.27 1.27))))
+          (number "43" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at -15.24 13.97 0) (length 2.54)
+          (name "GPIO3" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 1.27 0) (length 5.08)
-          (name "3/PD0" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 11.43 0) (length 2.54)
+          (name "GPIO4" (effects (font (size 1.27 1.27))))
           (number "6" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 -1.27 0) (length 5.08)
-          (name "4/PD4" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 8.89 0) (length 2.54)
+          (name "GPIO5" (effects (font (size 1.27 1.27))))
           (number "7" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 -3.81 0) (length 5.08)
-          (name "5/PC6" (effects (font (size 1.27 1.27))))
+        (pin power_in line (at -15.24 6.35 0) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
           (number "8" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -15.24 -6.35 0) (length 5.08)
-          (name "6/PD7" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at -15.24 3.81 0) (length 2.54)
+          (name "GPIO6" (effects (font (size 1.27 1.27))))
           (number "9" (effects (font (size 1.27 1.27))))
         )
       )
@@ -301,6 +377,110 @@
         )
       )
     )
+    (symbol "ScottoKeebs:Placeholder_Switch" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "SW" (at 1.27 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "Switch" (at 0 -1.524 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Push button switch, generic, two pins" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Placeholder_Switch_0_1"
+        (circle (center -2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.048)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy -2.54 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (circle (center 2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at -5.08 0 0) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 0 180) (length 2.54)
+          (name "2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "ScottoKeebs:Placeholder_TRRS" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at 0 15.24 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Value" "TRRS" (at 0 -2.54 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Footprint" "ScottoKeebs_Components:TRRS_PJ-320A" (at 3.81 0 0)
+        (effects (font (size 1.524 1.524)) hide)
+      )
+      (property "Datasheet" "" (at 3.81 0 0)
+        (effects (font (size 1.524 1.524)) hide)
+      )
+      (symbol "Placeholder_TRRS_0_1"
+        (rectangle (start -3.81 0) (end -3.81 12.7)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (rectangle (start -3.81 0) (end 5.08 0)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (rectangle (start -3.81 12.7) (end 5.08 12.7)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (rectangle (start 5.08 12.7) (end 5.08 0)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "Placeholder_TRRS_1_1"
+        (pin input line (at -8.89 2.54 0) (length 5.08)
+          (name "SLEEVE" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -8.89 10.16 0) (length 5.08)
+          (name "TIP" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -8.89 7.62 0) (length 5.08)
+          (name "RING1" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -8.89 5.08 0) (length 5.08)
+          (name "RING2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -395,9 +575,6 @@
     )
   )
 
-  (junction (at 245.11 48.26) (diameter 0) (color 0 0 0 0)
-    (uuid 0101f116-d069-4e06-b77f-eac61107f39b)
-  )
   (junction (at 204.47 124.46) (diameter 0) (color 0 0 0 0)
     (uuid 05275bdf-2b3b-49fa-9d3a-81e8c34d9bb8)
   )
@@ -479,17 +656,11 @@
   (junction (at 209.55 54.61) (diameter 0) (color 0 0 0 0)
     (uuid 9f14dca1-616c-48e8-82f2-f1ef4ada43ff)
   )
-  (junction (at 245.11 67.31) (diameter 0) (color 0 0 0 0)
-    (uuid a0b5c4a1-a470-4f0a-b94d-e40495806c4e)
-  )
   (junction (at 229.87 35.56) (diameter 0) (color 0 0 0 0)
     (uuid a2e27439-0b26-4d25-a9d8-ef461824c663)
   )
   (junction (at 240.03 92.71) (diameter 0) (color 0 0 0 0)
     (uuid a59eb8f0-485f-46a4-8bf3-0b7963fa241e)
-  )
-  (junction (at 80.01 48.26) (diameter 0) (color 0 0 0 0)
-    (uuid a6261324-fa02-4014-84c7-4e2516467126)
   )
   (junction (at 240.03 73.66) (diameter 0) (color 0 0 0 0)
     (uuid a6ec0ec3-2b1b-43f2-9ab0-84a334fd27d5)
@@ -518,17 +689,11 @@
   (junction (at 179.07 73.66) (diameter 0) (color 0 0 0 0)
     (uuid bd8f7032-5c9e-4d8c-9b63-d01fc12ff5fe)
   )
-  (junction (at 240.03 35.56) (diameter 0) (color 0 0 0 0)
-    (uuid c2843a63-7fd8-429f-9d40-ecd2770be12e)
-  )
   (junction (at 204.47 105.41) (diameter 0) (color 0 0 0 0)
     (uuid c2cf4d40-7d54-471e-a729-4c3cd21de9d1)
   )
   (junction (at 189.23 92.71) (diameter 0) (color 0 0 0 0)
     (uuid c427cc6d-40ab-46e9-9329-0eaaa2489749)
-  )
-  (junction (at 240.03 54.61) (diameter 0) (color 0 0 0 0)
-    (uuid c7bebc9c-6664-4f42-80f7-5e2b911948a0)
   )
   (junction (at 245.11 86.36) (diameter 0) (color 0 0 0 0)
     (uuid c93b99d1-f082-47bd-8289-19780b7c7322)
@@ -573,10 +738,6 @@
     (uuid fcd38938-82fb-444f-b1a3-a5eee4a61b10)
   )
 
-  (no_connect (at 83.82 57.15) (uuid 3eff6865-2582-4309-a976-52d239581a64))
-  (no_connect (at 114.3 41.91) (uuid 756f35f0-8582-4f05-9fc2-3f86142d39f9))
-  (no_connect (at 114.3 52.07) (uuid a2119e0e-c867-4994-b1fa-de4ec8295905))
-
   (wire (pts (xy 179.07 92.71) (xy 179.07 111.76))
     (stroke (width 0) (type default))
     (uuid 09372ed0-6d7d-4f14-aed2-12d0804eff8c)
@@ -600,10 +761,6 @@
   (wire (pts (xy 199.39 35.56) (xy 199.39 54.61))
     (stroke (width 0) (type default))
     (uuid 1c163a2d-7e4d-4f4a-90fc-51609477d6d3)
-  )
-  (wire (pts (xy 116.84 49.53) (xy 114.3 49.53))
-    (stroke (width 0) (type default))
-    (uuid 21b68515-baea-47b0-8319-5a88bb65bac7)
   )
   (wire (pts (xy 194.31 105.41) (xy 204.47 105.41))
     (stroke (width 0) (type default))
@@ -633,10 +790,6 @@
     (stroke (width 0) (type default))
     (uuid 3589f854-170a-4a85-a625-0a300d9009d3)
   )
-  (wire (pts (xy 245.11 67.31) (xy 254 67.31))
-    (stroke (width 0) (type default))
-    (uuid 35f31281-e45a-4548-806f-f6d66b5e973c)
-  )
   (wire (pts (xy 245.11 124.46) (xy 254 124.46))
     (stroke (width 0) (type default))
     (uuid 3db5dca7-6a9e-4f44-a313-1fa6c902886d)
@@ -657,7 +810,7 @@
     (stroke (width 0) (type default))
     (uuid 48a7c752-4217-4e3b-954a-c595e638ac70)
   )
-  (wire (pts (xy 240.03 54.61) (xy 240.03 73.66))
+  (wire (pts (xy 240.03 25.4) (xy 240.03 73.66))
     (stroke (width 0) (type default))
     (uuid 4994b565-55f7-4bc5-8b24-4372d0b05b52)
   )
@@ -665,7 +818,7 @@
     (stroke (width 0) (type default))
     (uuid 4a021044-abac-40f5-ade4-0701aa4cc196)
   )
-  (wire (pts (xy 234.95 67.31) (xy 245.11 67.31))
+  (wire (pts (xy 234.95 67.31) (xy 254 67.31))
     (stroke (width 0) (type default))
     (uuid 4a0b25bc-dd46-4577-bb6f-da3567e12c6d)
   )
@@ -709,7 +862,7 @@
     (stroke (width 0) (type default))
     (uuid 73fb48e6-2b08-4936-9402-64a57a63f244)
   )
-  (wire (pts (xy 234.95 48.26) (xy 245.11 48.26))
+  (wire (pts (xy 234.95 48.26) (xy 254 48.26))
     (stroke (width 0) (type default))
     (uuid 748d52f0-726c-40a9-89df-bd003ee45e24)
   )
@@ -720,6 +873,10 @@
   (wire (pts (xy 219.71 25.4) (xy 219.71 35.56))
     (stroke (width 0) (type default))
     (uuid 78d1c8f8-6fe3-4bb1-a200-57847d384fff)
+  )
+  (wire (pts (xy 102.87 43.18) (xy 101.6 43.18))
+    (stroke (width 0) (type default))
+    (uuid 7a12ecf9-4369-4fbb-9fb5-e83d89afd662)
   )
   (wire (pts (xy 184.15 48.26) (xy 194.31 48.26))
     (stroke (width 0) (type default))
@@ -741,17 +898,9 @@
     (stroke (width 0) (type default))
     (uuid 86416eb2-1442-4060-aec2-91416e4cb179)
   )
-  (wire (pts (xy 83.82 46.99) (xy 80.01 46.99))
-    (stroke (width 0) (type default))
-    (uuid 8c7ef5dd-738d-4845-b7ef-5a1e069458ed)
-  )
   (wire (pts (xy 204.47 67.31) (xy 214.63 67.31))
     (stroke (width 0) (type default))
     (uuid 8d9ed718-96f3-40bb-8203-ac5dbc42dac5)
-  )
-  (wire (pts (xy 83.82 49.53) (xy 80.01 49.53))
-    (stroke (width 0) (type default))
-    (uuid 91ee5347-cd31-46dd-bce3-c8ca3b7d5a1f)
   )
   (wire (pts (xy 199.39 25.4) (xy 199.39 35.56))
     (stroke (width 0) (type default))
@@ -765,29 +914,13 @@
     (stroke (width 0) (type default))
     (uuid 97cc6b65-55ac-4455-8214-838f38630fe9)
   )
-  (wire (pts (xy 245.11 48.26) (xy 254 48.26))
-    (stroke (width 0) (type default))
-    (uuid 9bba8a76-bd9b-4214-93a5-7f3e6df20b84)
-  )
   (wire (pts (xy 189.23 92.71) (xy 189.23 111.76))
     (stroke (width 0) (type default))
     (uuid 9be26286-b020-4764-9e7c-7280ac890db0)
   )
-  (wire (pts (xy 240.03 35.56) (xy 240.03 54.61))
-    (stroke (width 0) (type default))
-    (uuid 9c041c12-7753-43d2-b815-d1ea46db8b70)
-  )
   (wire (pts (xy 194.31 48.26) (xy 204.47 48.26))
     (stroke (width 0) (type default))
     (uuid 9ca0e568-4650-44e1-af91-1c406d112144)
-  )
-  (wire (pts (xy 240.03 25.4) (xy 240.03 35.56))
-    (stroke (width 0) (type default))
-    (uuid 9ddc6805-4cd5-422f-95d4-3d789d7ce1cc)
-  )
-  (wire (pts (xy 116.84 44.45) (xy 114.3 44.45))
-    (stroke (width 0) (type default))
-    (uuid 9f5050ca-5816-4d3b-9aa1-24e962fae1e9)
   )
   (wire (pts (xy 224.79 105.41) (xy 234.95 105.41))
     (stroke (width 0) (type default))
@@ -841,6 +974,10 @@
     (stroke (width 0) (type default))
     (uuid d548ab15-d4b2-41a0-81d8-d5c4784e4ec2)
   )
+  (wire (pts (xy 102.87 38.1) (xy 101.6 38.1))
+    (stroke (width 0) (type default))
+    (uuid d5e036be-0aa3-4627-b3ff-7d98a30bf6f8)
+  )
   (wire (pts (xy 214.63 67.31) (xy 224.79 67.31))
     (stroke (width 0) (type default))
     (uuid d74f4913-5bf5-4138-8b75-d8ccea72db7d)
@@ -853,10 +990,6 @@
     (stroke (width 0) (type default))
     (uuid e157652e-a596-4856-8940-8f245bdad47a)
   )
-  (wire (pts (xy 80.01 46.99) (xy 80.01 48.26))
-    (stroke (width 0) (type default))
-    (uuid e2bebc6a-a8fc-44ea-a2b3-c9212fed9feb)
-  )
   (wire (pts (xy 224.79 86.36) (xy 234.95 86.36))
     (stroke (width 0) (type default))
     (uuid e89dadd1-e684-46d7-a7b5-3d167b746b02)
@@ -868,10 +1001,6 @@
   (wire (pts (xy 194.31 67.31) (xy 204.47 67.31))
     (stroke (width 0) (type default))
     (uuid f129e871-688b-4834-9ba7-e7f7d25f7047)
-  )
-  (wire (pts (xy 80.01 49.53) (xy 80.01 48.26))
-    (stroke (width 0) (type default))
-    (uuid f54c229e-b5f7-4fa0-8607-0f9b38e71aeb)
   )
   (wire (pts (xy 179.07 35.56) (xy 179.07 54.61))
     (stroke (width 0) (type default))
@@ -904,6 +1033,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "row0" (shape input) (at 101.6 68.58 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 11052eb2-c411-4c9e-b1db-48978df2d113)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 109.0604 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "row1" (shape input) (at 254 67.31 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 112c052f-39b1-4d8c-bfe7-06734a329127)
@@ -918,32 +1054,11 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "col6" (shape input) (at 114.3 69.85 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 1f0eaeee-f23a-431e-a928-5d3f6e9d97f5)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.3975 69.85 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "col2" (shape input) (at 199.39 25.4 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 21a5143f-4de6-4eb9-bf92-e3a37a1e1ecf)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 199.39 18.3025 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "row1" (shape input) (at 83.82 62.23 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 22d7aa7d-3295-41cf-87cf-94d30445ae8f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 76.3596 62.23 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "row2" (shape input) (at 83.82 64.77 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 2309c540-58b6-4fe3-9871-dda472ac0427)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 76.3596 64.77 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "SDA" (shape input) (at 137.16 36.83 180) (fields_autoplaced)
@@ -960,20 +1075,6 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "col3" (shape input) (at 114.3 62.23 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 41542843-a9de-40e8-a2c2-9a600ce44fa1)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.3975 62.23 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "SCL" (shape input) (at 83.82 54.61 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 4867bfa0-f34b-4de4-be79-4c3d6bd877a8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 77.3272 54.61 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "col6" (shape input) (at 240.03 25.4 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4ba48db6-cb88-4389-8d2e-988d8c6bfe28)
@@ -981,17 +1082,24 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "col1" (shape input) (at 114.3 57.15 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 5e3531fb-cc9f-4172-ae19-8d38e0549d5e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.3975 57.15 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
+  (global_label "col2" (shape input) (at 71.12 58.42 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 5b889e67-6b66-4f4b-b495-16ad045625f4)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.0225 58.42 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SDA" (shape input) (at 83.82 52.07 180) (fields_autoplaced)
+  (global_label "RX0" (shape input) (at 71.12 35.56 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 60479190-4971-4b29-a245-7bea0d1c2ac2)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 77.2667 52.07 0)
+    (uuid 5db5aa14-8c8a-404c-afb3-6fef729c394f)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.4458 35.56 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "col1" (shape input) (at 71.12 55.88 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 65db18cb-394f-45b5-aa29-89974f8bd54d)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.0225 55.88 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1002,17 +1110,38 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "col4" (shape input) (at 114.3 64.77 0) (fields_autoplaced)
+  (global_label "col0" (shape input) (at 71.12 53.34 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 691ed005-f4c3-4e86-8223-f0db6f0fba1b)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.0225 53.34 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "TX0" (shape input) (at 71.12 33.02 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 73460826-917c-4b45-885d-d8803edd7167)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.7482 33.02 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "col6" (shape input) (at 71.12 71.12 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 73fd09bc-25cf-40c8-956f-ed04fd647c6a)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.0225 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "row3" (shape input) (at 101.6 78.74 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 7288963f-5a25-43ce-b69a-7c8811aa113c)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.3975 64.77 0)
+    (uuid 85d93ca4-3e48-46cf-a315-5d9a0cde7384)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 109.0604 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "row0" (shape input) (at 83.82 59.69 180) (fields_autoplaced)
+  (global_label "SDA" (shape input) (at 71.12 45.72 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 8110409b-2615-4cef-97a5-d0fcea73896b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 76.3596 59.69 0)
+    (uuid 89b8021f-2f55-41d6-9a62-a6ea4574e9b8)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.5667 45.72 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1030,25 +1159,11 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "row4" (shape input) (at 83.82 69.85 180) (fields_autoplaced)
+  (global_label "RX0" (shape input) (at 137.16 80.01 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 980f3e8d-e6a3-48cd-b12e-928ab81307ca)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 76.3596 69.85 0)
+    (uuid 9b37c935-8e88-4c85-b7fc-23de6470f808)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 130.4858 80.01 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "col5" (shape input) (at 114.3 67.31 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid a2b51588-7a54-4fd1-8202-742745cdaf7e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.3975 67.31 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "col0" (shape input) (at 114.3 54.61 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid a4333361-4993-4541-b2f1-187c990d3ea7)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.3975 54.61 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "row3" (shape input) (at 254 105.41 0) (fields_autoplaced)
@@ -1058,6 +1173,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "col5" (shape input) (at 71.12 68.58 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid a85bf7bb-efc4-431b-8b9f-3df5a368dc1f)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.0225 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "col0" (shape input) (at 179.07 25.4 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a97c5028-2cdc-4bda-ab0a-00f3afa7e351)
@@ -1065,11 +1187,39 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "col2" (shape input) (at 114.3 59.69 0) (fields_autoplaced)
+  (global_label "RESET" (shape input) (at 101.6 58.42 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid d128515d-e9ed-447f-b8d9-08833b372174)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 121.3975 59.69 0)
+    (uuid b853eb97-890b-4491-a926-21550ec50826)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 110.3303 58.42 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "RESET" (shape input) (at 139.7 58.42 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b85db466-906e-4840-a0a8-5e1c463c1708)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.4303 58.42 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "row4" (shape input) (at 101.6 81.28 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid bd3c9194-a3dd-45f1-a99a-1f392ad39320)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 109.0604 81.28 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "row1" (shape input) (at 101.6 71.12 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c97768a3-d6ed-4a10-9796-53f90f444190)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 109.0604 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "col3" (shape input) (at 71.12 60.96 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid d58f36ca-cfea-4079-aba3-ff359b3b8bf8)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.0225 60.96 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "col1" (shape input) (at 189.23 25.4 90) (fields_autoplaced)
@@ -1079,17 +1229,31 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "RESET" (shape input) (at 114.3 46.99 0) (fields_autoplaced)
+  (global_label "row2" (shape input) (at 101.6 73.66 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid eedc6bb1-7813-4693-b97f-24829f5f601d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 123.0303 46.99 0)
+    (uuid e402843c-9e1a-4c34-bdc4-57796c9cd1ba)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 109.0604 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "row3" (shape input) (at 83.82 67.31 180) (fields_autoplaced)
+  (global_label "SCL" (shape input) (at 71.12 48.26 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid ef2045b6-4722-40af-90ea-567b780afdb9)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 76.3596 67.31 0)
+    (uuid e7708bb2-44a2-4992-9cd4-8a89c67e19ef)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.6272 48.26 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "col4" (shape input) (at 71.12 66.04 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid eeb3971c-af14-4f9f-b5c7-7d9cdf650814)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.0225 66.04 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "TX0" (shape input) (at 137.16 77.47 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid f7d40a57-dc4e-4416-a272-e4f0ccaeb217)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 130.7882 77.47 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1118,7 +1282,7 @@
     (pin "1" (uuid 2bdf3bbd-593d-46a2-bf8b-7b5478a35079))
     (pin "2" (uuid 62736e66-64cd-4dc3-ae7e-320d80f851a4))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D30") (unit 1)
         )
@@ -1144,7 +1308,7 @@
     (pin "1" (uuid ab4bf0bc-887e-4c77-b7c3-9ac28a54dad2))
     (pin "2" (uuid 896c297f-dbcd-416a-bb10-b97f17e00c74))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S19") (unit 1)
         )
@@ -1176,9 +1340,76 @@
     (pin "1" (uuid 715b885c-82ac-4947-89fa-05a4d2daa735))
     (pin "2" (uuid 597dd0d6-31d4-483b-be1b-12225e22b708))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D22") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "ScottoKeebs:MCU_Raspberry_Pi_Pico") (at 86.36 57.15 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0c390408-b384-437e-b47b-e76827bdbb32)
+    (property "Reference" "U2" (at 86.36 25.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Raspberry_Pi_Pico" (at 86.36 27.94 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "ScottoKeebs_MCU:Raspberry_Pi_Pico" (at 86.36 26.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 86.36 57.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "13" (uuid 2780453f-bab7-4c6f-be4a-f97d65632e87))
+    (pin "21" (uuid 3479fa33-5273-46ab-b002-359bde0a60d4))
+    (pin "39" (uuid 8d2bc747-5265-4e32-bb88-b14d39608d87))
+    (pin "41" (uuid 98f63b87-53b9-44b0-9b9d-2f5d9c571698))
+    (pin "42" (uuid 0323a997-ee94-44e2-a2a5-59673bfce8c1))
+    (pin "36" (uuid 059313cf-d0cf-45f6-9491-c144f845eb04))
+    (pin "11" (uuid de511ac9-0ce3-4c05-befb-6f651154ccdb))
+    (pin "10" (uuid f9efab96-7c62-4ff9-a6a8-ca3e8475742e))
+    (pin "12" (uuid 2cf77d9a-acd4-4e17-9f87-c46637960b79))
+    (pin "15" (uuid fd1b655d-4017-40a2-b721-2de9703bed6b))
+    (pin "17" (uuid c05ef7e2-9117-44d8-bc1c-f71aac4ee97d))
+    (pin "2" (uuid 0af87af3-9f8a-4cc5-8285-402a21213563))
+    (pin "20" (uuid f7bab863-21d9-4d8a-a44c-a437da5fde76))
+    (pin "25" (uuid 4aba7f37-90b2-4d1e-9955-90fca8d3c364))
+    (pin "1" (uuid 24e15920-2a9f-4a2d-a07e-4cc06f630cb7))
+    (pin "14" (uuid 6a267cd0-13b8-4279-891b-671adf4ed3b2))
+    (pin "18" (uuid 13d97888-5c6d-4915-9db5-9a11e7ae2360))
+    (pin "27" (uuid 576d657d-2f97-4c9c-9e87-5343258eeb73))
+    (pin "28" (uuid 0e21614a-d378-4798-8993-60b504e7fbc1))
+    (pin "29" (uuid 1fab58da-4f5e-429d-9f3c-411901922235))
+    (pin "31" (uuid 9fe9c379-0ab5-4db2-80c2-9f570e243387))
+    (pin "32" (uuid 5c2a1584-62c5-4597-b502-eb28844f0cd5))
+    (pin "23" (uuid 451e4ffe-52d1-45b3-9f95-e0e3cd16e7f7))
+    (pin "33" (uuid 98fecd70-65a9-4d65-a3d3-f4369a783d5b))
+    (pin "35" (uuid dffe549e-bda6-40d4-9f27-02ee44fcdf2c))
+    (pin "30" (uuid 43b71932-1cf8-49d5-9b85-e9b2e566d251))
+    (pin "37" (uuid 50e7dec9-5f4c-416c-9ec0-457960b15086))
+    (pin "24" (uuid 3f1f262f-740a-490f-8883-c8f224356385))
+    (pin "26" (uuid 11b69e41-d005-4a5a-b87d-ca0e79f61990))
+    (pin "38" (uuid 1f00ea50-bff1-4c58-908d-f52205145276))
+    (pin "40" (uuid c408571d-3ab4-4acd-945c-dce167c016d0))
+    (pin "16" (uuid c04fb3d7-309e-4304-89bd-779d005e8574))
+    (pin "3" (uuid 2ddb666d-962e-49f7-a906-82f6f407e447))
+    (pin "22" (uuid 8dc13be6-4f0f-47f1-9a92-abe939e79881))
+    (pin "34" (uuid 5a22db04-efa3-47db-b071-14f6348cc10d))
+    (pin "4" (uuid a7d95729-9d72-452e-898f-65d3c9aeb3e9))
+    (pin "19" (uuid 876e78c2-3fee-4884-afbc-d7afe8d191ab))
+    (pin "43" (uuid 07f91f40-329e-4737-93b7-9a280fa2659d))
+    (pin "7" (uuid e1239671-101f-496a-bc42-a61d84726078))
+    (pin "8" (uuid 8be70f6c-c5a7-476a-ab7e-9ea1a27f4d3a))
+    (pin "5" (uuid 7e447784-d9cc-43d0-9fd2-1f371300e591))
+    (pin "6" (uuid 2c7e0b1e-eed5-4ea9-8abe-08ae53fa84c6))
+    (pin "9" (uuid 64f866b6-3d3c-4370-8c29-4a87b5eb46fb))
+    (instances
+      (project "wackymxter"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -1208,7 +1439,7 @@
     (pin "1" (uuid e0c22d59-6d99-4962-92c3-db0d0c07c275))
     (pin "2" (uuid 45d550f6-a5f3-4cee-b39a-7e3871fe4e04))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D2") (unit 1)
         )
@@ -1234,7 +1465,7 @@
     (pin "1" (uuid e6221d73-6674-4dc7-84b7-acba4c7f8738))
     (pin "2" (uuid 6a9d9dfc-a762-4313-8cf2-77f39395499e))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S21") (unit 1)
         )
@@ -1266,7 +1497,7 @@
     (pin "1" (uuid af9ed528-2b56-497b-b9f0-c042aa1c25ae))
     (pin "2" (uuid 6315158f-8603-4940-aac1-a2707d8b425d))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D4") (unit 1)
         )
@@ -1298,7 +1529,7 @@
     (pin "1" (uuid 932216b2-0cba-4a71-b0d4-1aace3a597cb))
     (pin "2" (uuid 19465037-018b-466d-a91a-221a40102fc3))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D3") (unit 1)
         )
@@ -1330,7 +1561,7 @@
     (pin "1" (uuid 3546d1c0-c4dc-43a0-b4c7-76da01e3e658))
     (pin "2" (uuid 0cdc58a8-a99f-4c37-bf00-6c0504548672))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D12") (unit 1)
         )
@@ -1356,7 +1587,7 @@
     (pin "1" (uuid c6ddff2e-5395-4c84-b67a-634b6cecc0e8))
     (pin "2" (uuid a7b54d7d-d997-42e3-b2e0-c2a4ad7ff92c))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S34") (unit 1)
         )
@@ -1388,7 +1619,7 @@
     (pin "1" (uuid a2f24ebd-8b67-4e2f-85e0-df0c21d324e8))
     (pin "2" (uuid dc780343-9798-4ecc-a17f-de6b4a659835))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D35") (unit 1)
         )
@@ -1414,7 +1645,7 @@
     (pin "1" (uuid 9cbd7169-c70e-4d13-aac3-a7fb5e9a97f6))
     (pin "2" (uuid 4417fd5f-ed6e-4c63-804e-b1059a9e056d))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S2") (unit 1)
         )
@@ -1440,7 +1671,7 @@
     (pin "1" (uuid 928b5027-7554-4708-adbb-d1cce3fce1c9))
     (pin "2" (uuid 8b7ae082-66a0-4d6a-a7f1-2b71c567579a))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S29") (unit 1)
         )
@@ -1472,7 +1703,7 @@
     (pin "1" (uuid 9be1021a-6e63-47ff-8665-8d9276a4830e))
     (pin "2" (uuid 9461b460-eb6f-4596-8c28-ebdcac6153c9))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D11") (unit 1)
         )
@@ -1498,9 +1729,59 @@
     (pin "1" (uuid f821fb37-d910-48c7-bf05-b1cc6c9bb448))
     (pin "2" (uuid 5eb67b49-1cb9-49ce-81b0-8f644d8b3a71))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 129.54 58.42 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2f7d88f2-7d38-497c-bd75-44a7fe6a4469)
+    (property "Reference" "#PWR01" (at 123.19 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 125.73 58.42 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 129.54 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 129.54 58.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 409f1252-fd58-4549-bfe1-6995a5bf4c7a))
+    (instances
+      (project "wackymxter"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "#PWR01") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VCC") (at 102.87 43.18 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 338e0ed0-69ec-4329-bfc8-c2296e9fde83)
+    (property "Reference" "#PWR07" (at 99.06 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VCC" (at 106.68 43.18 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 102.87 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 102.87 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 94dffd72-ceec-46aa-b44f-9d208bd501e7))
+    (instances
+      (project "wackymxter"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -1524,41 +1805,9 @@
     (pin "1" (uuid 803b2b5f-1981-4400-b4f4-5cf1246cd19f))
     (pin "2" (uuid 518f86c3-2955-430c-96f5-752a71409085))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 245.11 44.45 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3dd90506-dcae-4bd8-84c2-11067413cd65)
-    (property "Reference" "D7" (at 247.65 43.18 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "Diode" (at 247.65 45.72 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "ScottoKeebs_Components:Diode_DO-35" (at 245.11 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 245.11 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 245.11 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 245.11 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 893713ed-1e92-4428-b9a9-6a72d51d8e9b))
-    (pin "2" (uuid 84dd9c49-7fab-4bf2-8662-5d84dc9f6864))
-    (instances
-      (project "gentree"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "D7") (unit 1)
         )
       )
     )
@@ -1588,7 +1837,7 @@
     (pin "1" (uuid a545a202-486f-4f02-8a53-5806062f14c8))
     (pin "2" (uuid 3833cbd3-2f02-4dec-96f0-3b274058201d))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D29") (unit 1)
         )
@@ -1620,7 +1869,7 @@
     (pin "1" (uuid c9befe72-f82b-4d3a-acc0-d04143f775ea))
     (pin "2" (uuid 4c355740-0ef4-4ab1-9cd4-c28dec82b674))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D21") (unit 1)
         )
@@ -1646,7 +1895,7 @@
     (pin "1" (uuid d9dae173-c774-4a5f-928d-f1c4c6b5ff84))
     (pin "2" (uuid 95f6fd3c-d084-40af-844d-6743e1706cb5))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S15") (unit 1)
         )
@@ -1672,7 +1921,7 @@
     (pin "1" (uuid c1a3babb-c920-4326-a001-f697696ef1f8))
     (pin "2" (uuid 11352049-0bf9-4749-acd7-a525856bd751))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S32") (unit 1)
         )
@@ -1700,7 +1949,7 @@
     (pin "1" (uuid f6bb3494-0bb2-4ac6-80e1-f9f6dbc65e56))
     (pin "3" (uuid a44fdfeb-f26e-4acd-a245-461914b4937e))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "J1") (unit 1)
         )
@@ -1726,7 +1975,7 @@
     (pin "1" (uuid 71d3a2bb-a2aa-4bf5-bf10-33473c9649de))
     (pin "2" (uuid 0178952f-2b4e-4377-9a6b-8eaac3ea78a7))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S11") (unit 1)
         )
@@ -1758,7 +2007,7 @@
     (pin "1" (uuid cdabafc5-3480-45c2-b5fd-3de13f9c31bf))
     (pin "2" (uuid 07971b5c-2490-4d50-830a-758d53225d17))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D18") (unit 1)
         )
@@ -1790,7 +2039,7 @@
     (pin "1" (uuid d16d9948-8995-40cc-b5d2-6cd763cc8406))
     (pin "2" (uuid 9aa249fe-e0ec-497c-98dd-c818ebe6bfba))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D23") (unit 1)
         )
@@ -1822,7 +2071,7 @@
     (pin "1" (uuid e4086067-3d35-49ff-9869-9cadbf2ab726))
     (pin "2" (uuid fc72b90f-ab7f-4a8b-84fd-608e01adf6b5))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D20") (unit 1)
         )
@@ -1848,7 +2097,7 @@
     (pin "1" (uuid 3c0c9b40-4523-40b2-abf9-a857da6bd79b))
     (pin "2" (uuid f5d1e07a-470a-4d84-aa89-7098d544c51c))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S6") (unit 1)
         )
@@ -1874,7 +2123,7 @@
     (pin "1" (uuid a32de1a4-2d62-4c72-8bde-2a6b40414eef))
     (pin "2" (uuid a9fae2bb-5c0f-4ca1-aad7-627564884ea0))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S30") (unit 1)
         )
@@ -1906,7 +2155,7 @@
     (pin "1" (uuid 3829e761-d7d2-4d1a-adcd-40767462acf1))
     (pin "2" (uuid 92a22219-087a-49a0-acc1-976a40251d1b))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D33") (unit 1)
         )
@@ -1938,35 +2187,9 @@
     (pin "1" (uuid 8d54c793-38ee-4547-86ed-354a40bab52c))
     (pin "2" (uuid 01d58548-c672-44f6-8977-0eb138fcb7b1))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D28") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "ScottoKeebs:Placeholder_Keyswitch") (at 242.57 38.1 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6972f15b-5145-4b47-a2ae-688594440b84)
-    (property "Reference" "S7" (at 242.57 30.48 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Keyswitch" (at 242.57 33.02 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u" (at 242.57 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 242.57 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 559642c6-eb28-4c01-ae71-a9221657a643))
-    (pin "2" (uuid 98b0b4b4-9989-4714-b986-2edd27042283))
-    (instances
-      (project "gentree"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "S7") (unit 1)
         )
       )
     )
@@ -1996,7 +2219,7 @@
     (pin "1" (uuid 94b81a5c-f128-4ef7-974e-10595fe252e9))
     (pin "2" (uuid 6c22edea-271a-4534-acd9-4ec699ed1599))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D6") (unit 1)
         )
@@ -2028,9 +2251,34 @@
     (pin "1" (uuid 6b83f044-095e-4a12-80b7-383d9c067934))
     (pin "2" (uuid c13d4893-84db-4392-89f5-2fad53ccf99c))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D32") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 137.16 85.09 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 71b4d88e-78d6-473d-aaeb-11dd4502203a)
+    (property "Reference" "#PWR09" (at 130.81 85.09 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 133.35 85.09 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 137.16 85.09 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 137.16 85.09 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 12270c9b-4c33-49fb-8ff0-c653af175542))
+    (instances
+      (project "wackymxter"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -2060,7 +2308,7 @@
     (pin "1" (uuid 53b1e497-2141-41ad-9832-c74c91f1152e))
     (pin "2" (uuid c4967ef2-6146-43fe-9e8c-7f3c50d8778e))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D16") (unit 1)
         )
@@ -2092,9 +2340,35 @@
     (pin "1" (uuid 40796da3-78ad-4cad-b270-bb480f6f0e7f))
     (pin "2" (uuid 79cd6761-0226-4060-b813-9c3c64cc3599))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D15") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "ScottoKeebs:Placeholder_Switch") (at 134.62 58.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 780b9990-89ea-4848-a8dd-0d5841711551)
+    (property "Reference" "SW1" (at 134.62 50.8 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Switch" (at 134.62 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" (at 134.62 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 134.62 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 02d9ad7c-f431-4e52-925a-98194fa1d65f))
+    (pin "2" (uuid 38e8cf8e-b3bc-4a1f-ae7a-5f3f6126545f))
+    (instances
+      (project "wackymxter"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "SW1") (unit 1)
         )
       )
     )
@@ -2118,34 +2392,9 @@
     (pin "1" (uuid 2638f7aa-25af-4fe4-8c99-09d25571cdbb))
     (pin "2" (uuid dfe5b454-294c-4720-9223-4919b96fbad8))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S20") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 116.84 44.45 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7b95b079-fce4-430d-90f6-43abaae0bea9)
-    (property "Reference" "#PWR01" (at 123.19 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 120.65 44.45 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 116.84 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 116.84 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c5f6895b-d062-408f-8ed6-8a4c52d7cec8))
-    (instances
-      (project "gentree"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -2175,7 +2424,7 @@
     (pin "1" (uuid 84ce50e8-36d3-4ccd-85f2-735d61c8f234))
     (pin "2" (uuid 780d8959-3bcc-48e1-87cc-bc43c402a066))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D26") (unit 1)
         )
@@ -2200,7 +2449,7 @@
     )
     (pin "1" (uuid 33be5ca8-008d-410b-ba61-87ece33ffad3))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR05") (unit 1)
         )
@@ -2226,7 +2475,7 @@
     (pin "1" (uuid 0a173706-123c-4368-b90d-eb69ee4eabea))
     (pin "2" (uuid 639940d2-0201-4f9a-86da-b58cf1166f14))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S22") (unit 1)
         )
@@ -2258,7 +2507,7 @@
     (pin "1" (uuid f433551e-5b2a-4017-a6a1-ad55e2556bda))
     (pin "2" (uuid 16e6ffa2-5836-411b-be32-4883a7a4cccb))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D1") (unit 1)
         )
@@ -2284,34 +2533,9 @@
     (pin "1" (uuid eb55a358-ca77-4721-8fa0-1335792fce80))
     (pin "2" (uuid aacc23d3-b3a0-44e4-b422-818b7f3d9792))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S23") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VCC") (at 116.84 49.53 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 83b4d3b1-4cc7-4e1c-881b-30adfd7a8416)
-    (property "Reference" "#PWR03" (at 113.03 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VCC" (at 120.65 49.53 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 116.84 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 116.84 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d049d3e2-d943-4117-8907-ddac73aa3bec))
-    (instances
-      (project "gentree"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2341,9 +2565,34 @@
     (pin "1" (uuid bec9b8d1-1233-4c2b-bc96-5b506b2402be))
     (pin "2" (uuid bf333b4b-0b77-41c5-b0a1-e5d04e728ad6))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D8") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 102.87 38.1 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8d4e3e6a-4675-42bf-ac72-22345f1078f0)
+    (property "Reference" "#PWR06" (at 109.22 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 106.68 38.1 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 102.87 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 102.87 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cce82810-d504-4d20-9e6d-24ec6bee82f9))
+    (instances
+      (project "wackymxter"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -2373,7 +2622,7 @@
     (pin "1" (uuid a07396fc-6c7e-4174-98d5-4111d3150fb7))
     (pin "2" (uuid 1e3ad2aa-c041-4dee-826b-32568797e5b9))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D24") (unit 1)
         )
@@ -2399,7 +2648,7 @@
     (pin "1" (uuid f9ca8c2c-1dc6-4440-a4b3-877b1cfe893e))
     (pin "2" (uuid 4b5dae52-4012-46f2-b166-355bf7ad5a27))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S28") (unit 1)
         )
@@ -2425,7 +2674,7 @@
     (pin "1" (uuid be0f6624-4623-41b7-8eb0-86c7302852ad))
     (pin "2" (uuid d546437b-1981-4d89-b291-448e9d1bbeba))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S13") (unit 1)
         )
@@ -2451,9 +2700,34 @@
     (pin "1" (uuid b3f2782d-b825-48dc-8eb0-6ca5b19852de))
     (pin "2" (uuid 0d2510fa-f338-4062-b28e-5eba55de50e3))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VCC") (at 137.16 82.55 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a0bd721a-7819-48c4-8b32-9573aa20d997)
+    (property "Reference" "#PWR08" (at 140.97 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VCC" (at 133.35 82.55 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 137.16 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 137.16 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid caed86b8-a4aa-43cb-905b-369884627750))
+    (instances
+      (project "wackymxter"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -2476,7 +2750,7 @@
     )
     (pin "1" (uuid 3fc9fb85-8114-42a5-a335-1522ba26bfe0))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR04") (unit 1)
         )
@@ -2508,7 +2782,7 @@
     (pin "1" (uuid d2aad21d-5815-432e-958c-0e58d7f6da12))
     (pin "2" (uuid c4860dbe-c659-49ee-835c-95ef92a712af))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D27") (unit 1)
         )
@@ -2540,9 +2814,34 @@
     (pin "1" (uuid 34d1b017-1b05-4b7d-8955-e74b73821ac2))
     (pin "2" (uuid 5beb430f-450f-4c9c-b6ee-b22de0b9c0af))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 101.6 63.5 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ad093f01-3fda-4935-845a-cd914d9a8450)
+    (property "Reference" "#PWR010" (at 107.95 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 105.41 63.5 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 101.6 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 101.6 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 83e89672-71a9-4fa8-8236-0ca790aa73cf))
+    (instances
+      (project "wackymxter"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -2572,7 +2871,7 @@
     (pin "1" (uuid 018d77d5-a685-4eec-b794-19cae64461cc))
     (pin "2" (uuid 8590e9ec-b744-4c61-ba39-8ea8dc797322))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D25") (unit 1)
         )
@@ -2604,7 +2903,7 @@
     (pin "1" (uuid 1b15489d-186e-4160-9239-67d3bf720720))
     (pin "2" (uuid a0d321a4-2514-419c-9cf4-3c866c727436))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D31") (unit 1)
         )
@@ -2621,7 +2920,7 @@
     (property "Value" "Keyswitch" (at 222.25 109.22 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u" (at 222.25 114.3 0)
+    (property "Footprint" "ScottoKeebs_MX:MX_PCB_1.50u" (at 222.25 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 222.25 114.3 0)
@@ -2630,57 +2929,9 @@
     (pin "1" (uuid f04c18e1-c0f4-4d50-8eff-e42e098e2921))
     (pin "2" (uuid d5e939cc-6480-4e50-aa2b-6ce33190ea21))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S33") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "ScottoKeebs:MCU_Arduino_Pro_Micro") (at 99.06 55.88 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b78f62dc-1d9f-400f-9e68-5946a3458268)
-    (property "Reference" "U1" (at 99.06 34.29 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "Arduino_Pro_Micro" (at 99.06 36.83 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Footprint" "ScottoKeebs_MCU:Arduino_Pro_Micro" (at 99.06 78.74 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Datasheet" "" (at 125.73 119.38 90)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (pin "15" (uuid c1dbd7cb-8ace-4998-931a-01781e671cd0))
-    (pin "1" (uuid b9fb58c5-dfcb-4379-ad2c-e26e9b8cec96))
-    (pin "21" (uuid 3505f6c8-8888-4031-b68e-c4ae13d2cf12))
-    (pin "17" (uuid eda0c9b1-04ba-4a69-b979-a5f0eee6d8ee))
-    (pin "14" (uuid cc81bbd1-a7d8-43a8-80a9-4bf77884c055))
-    (pin "24" (uuid a09734b3-f7ec-452f-b0b5-10360eb8c6a7))
-    (pin "8" (uuid 13d85657-843e-46e6-9214-1225c9683de3))
-    (pin "11" (uuid 7b3ee0af-3ba7-4409-9ca1-e3f18ca32ce3))
-    (pin "16" (uuid 96629311-48ee-4ab5-a77d-9e4267936662))
-    (pin "5" (uuid 315f13b9-f78a-4b23-b890-e7fb4cb5ea86))
-    (pin "9" (uuid b3f059d8-785b-49ae-b383-005d094337e4))
-    (pin "3" (uuid 808c6212-d62a-4fde-82a3-1fd123252240))
-    (pin "18" (uuid a0528e68-0fa1-4a8b-89ea-3379ecae4036))
-    (pin "7" (uuid 270e77b7-c097-4b9a-bc4e-d6bbd49feab2))
-    (pin "10" (uuid e75e36db-313c-4117-9fac-9bc5d31f7a4b))
-    (pin "13" (uuid a83d3c1c-b75f-4748-a55a-233bb65183d7))
-    (pin "19" (uuid fec21004-97e2-42da-a1e3-5593beccc96a))
-    (pin "6" (uuid 90198ecf-67ba-43cc-9548-4798fd4480eb))
-    (pin "2" (uuid a4072a42-8189-4c9c-b279-a18e151b9ea9))
-    (pin "23" (uuid 7131a1d8-7b00-4b51-adbb-838b788078a9))
-    (pin "12" (uuid df4f8d7d-d724-4c75-83a8-702d31078588))
-    (pin "20" (uuid 8b09424f-ff3b-4d6e-bb24-d4a64fc39bdb))
-    (pin "4" (uuid c0a9dd31-7339-4185-b899-9bc402f37237))
-    (pin "22" (uuid 09c88b62-b2eb-4ff5-95ae-944347d4dee9))
-    (instances
-      (project "gentree"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "U1") (unit 1)
         )
       )
     )
@@ -2704,34 +2955,9 @@
     (pin "1" (uuid 53936240-35f2-4136-b7e0-9e36081d05ea))
     (pin "2" (uuid 1e89aa87-d723-4eed-8c44-96bd80a98612))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S27") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 80.01 48.26 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c1f3b0dd-902f-441d-950f-d55bfc7b2f61)
-    (property "Reference" "#PWR02" (at 73.66 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 76.2 48.26 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 80.01 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 80.01 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 598a56f1-4a04-420e-b002-7d831b43984c))
-    (instances
-      (project "gentree"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -2761,7 +2987,7 @@
     (pin "1" (uuid 37f6f20f-bdd5-4314-976c-79ad9d09fbf6))
     (pin "2" (uuid fcea1ddb-3000-4b55-9c2e-558404692892))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D10") (unit 1)
         )
@@ -2787,41 +3013,9 @@
     (pin "1" (uuid 121ab9fc-a8d1-4995-b187-684ad176468a))
     (pin "2" (uuid c49ed779-6d8b-42ea-9670-5cf760395111))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 245.11 63.5 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid cb3b806d-5f1d-4b06-a529-3721ed5b49cd)
-    (property "Reference" "D14" (at 247.65 62.23 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "Diode" (at 247.65 64.77 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "ScottoKeebs_Components:Diode_DO-35" (at 245.11 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 245.11 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 245.11 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 245.11 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 12586590-6bbc-41c9-8c6a-a17bba91b5f6))
-    (pin "2" (uuid 355a7017-3888-44fd-967d-33380fe83490))
-    (instances
-      (project "gentree"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "D14") (unit 1)
         )
       )
     )
@@ -2851,7 +3045,7 @@
     (pin "1" (uuid 7109d5a9-edfa-4cdd-9a90-287bb9591889))
     (pin "2" (uuid 9ac96005-8d68-4fe6-b5e4-9f95f997b519))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D34") (unit 1)
         )
@@ -2877,7 +3071,7 @@
     (pin "1" (uuid fe9d8857-00ed-4830-afa4-88a5cbe8c9b4))
     (pin "2" (uuid e5a4fd91-b0c3-4e16-8f43-5e1c0da15b92))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S17") (unit 1)
         )
@@ -2903,7 +3097,7 @@
     (pin "1" (uuid 7fb74f64-26b9-4929-8bf7-e67835d7f2dc))
     (pin "2" (uuid 83ae7f5e-306f-4937-9df7-19642b7627a1))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S12") (unit 1)
         )
@@ -2929,7 +3123,7 @@
     (pin "1" (uuid 89154095-ce6a-4aa4-9e7c-82a457a63c43))
     (pin "2" (uuid 8b630d82-c477-494f-9a25-1e233d093de1))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S10") (unit 1)
         )
@@ -2955,7 +3149,7 @@
     (pin "1" (uuid 70164bfc-6232-4ab5-9402-6f5629600dc4))
     (pin "2" (uuid d0bb554c-4774-4fc3-b720-56a11c788c84))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S16") (unit 1)
         )
@@ -2981,35 +3175,9 @@
     (pin "1" (uuid 4115c1fd-c3a1-43e5-adc4-3b8e4ecb4256))
     (pin "2" (uuid c5439036-2731-4f0d-affe-8d89a00ccd86))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S24") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "ScottoKeebs:Placeholder_Keyswitch") (at 242.57 57.15 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ddc5018d-af2b-4594-a362-1add939a2af8)
-    (property "Reference" "S14" (at 242.57 49.53 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Keyswitch" (at 242.57 52.07 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u" (at 242.57 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 242.57 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d77e81a3-6fdc-4b7e-86d7-fbc1ed21228d))
-    (pin "2" (uuid 17c1e47b-477c-402e-99f7-4cc450db0a0d))
-    (instances
-      (project "gentree"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "S14") (unit 1)
         )
       )
     )
@@ -3033,7 +3201,7 @@
     (pin "1" (uuid a79e455d-d193-46a3-87d2-91aa8e20caea))
     (pin "2" (uuid 11504829-1d23-4572-8688-0e14ee654537))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S26") (unit 1)
         )
@@ -3065,9 +3233,37 @@
     (pin "1" (uuid 6d62d855-962c-4ed6-a726-1c05ff26978a))
     (pin "2" (uuid 36fdd3bb-9746-4c8b-abc2-4fafd638b632))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D13") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "ScottoKeebs:Placeholder_TRRS") (at 146.05 87.63 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e98708bf-16ec-44e9-801e-1364b1f5c32d)
+    (property "Reference" "U3" (at 152.4 80.01 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Value" "TRRS" (at 152.4 82.55 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Footprint" "ScottoKeebs_Components:TRRS_PJ-320A" (at 149.86 87.63 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Datasheet" "" (at 149.86 87.63 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (pin "1" (uuid 876fe2b8-efa3-4406-9f2b-cb617ca20d68))
+    (pin "3" (uuid c4186bdb-905d-4f42-a6d7-fc865d81cf19))
+    (pin "4" (uuid f51b8aa0-8734-4f22-a815-157a7708bf2f))
+    (pin "2" (uuid 4648988e-a977-477b-9160-7f04dd07a955))
+    (instances
+      (project "wackymxter"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -3091,7 +3287,7 @@
     (pin "1" (uuid 6d8ccc26-ea4f-4056-be37-9444fa7b8eb9))
     (pin "2" (uuid 20d7a37e-688a-4c41-ad62-6b6db4553614))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S18") (unit 1)
         )
@@ -3123,7 +3319,7 @@
     (pin "1" (uuid 39840939-b6cf-48b1-97ff-b5482355f336))
     (pin "2" (uuid 441b9028-1323-447c-8040-aa7a2300f5aa))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D5") (unit 1)
         )
@@ -3149,7 +3345,7 @@
     (pin "1" (uuid 5efa93df-4641-410a-b1df-5bf8644e9e95))
     (pin "2" (uuid 5d244314-78e1-4f20-a45a-5169fa9b3f5a))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S35") (unit 1)
         )
@@ -3181,7 +3377,7 @@
     (pin "1" (uuid beafbc2f-4f0e-4abe-a65b-2d02c2940700))
     (pin "2" (uuid 356b68d3-674a-4b83-aafd-403ddbb0b780))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D17") (unit 1)
         )
@@ -3207,7 +3403,7 @@
     (pin "1" (uuid 7c88ebf9-f974-4154-adf4-b13a1f670051))
     (pin "2" (uuid 840627cc-aa7c-48ce-ba28-72e4d30a87ed))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S5") (unit 1)
         )
@@ -3233,7 +3429,7 @@
     (pin "1" (uuid 3e9af528-ede9-421a-9d96-9e907762107a))
     (pin "2" (uuid 1d2084dd-0133-4033-ad11-ee4cdd07df4e))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S31") (unit 1)
         )
@@ -3259,7 +3455,7 @@
     (pin "1" (uuid 2493bf54-af44-43c6-9e99-207ebf409b34))
     (pin "2" (uuid c82a9d2a-2d40-4ec8-93e2-577fc410d1f8))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S8") (unit 1)
         )
@@ -3285,7 +3481,7 @@
     (pin "1" (uuid e32c4ec3-0d0e-4a7e-9968-36276fd8bd7b))
     (pin "2" (uuid c1c36dc1-b058-4941-8d64-7a3a3789da37))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S25") (unit 1)
         )
@@ -3317,7 +3513,7 @@
     (pin "1" (uuid 5c18705c-514b-4d77-8535-211bbd79808e))
     (pin "2" (uuid 474b10df-1709-4f31-9468-2afaadc781b6))
     (instances
-      (project "gentree"
+      (project "wackymxter"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D19") (unit 1)
         )
