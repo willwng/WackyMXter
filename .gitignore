@@ -1,5 +1,5 @@
 fp-info-cache
-pcb/wackymxter-backups/*
-pcb/production/*
+wackymxter-backups/
+production/
 *.lck
 *.log
