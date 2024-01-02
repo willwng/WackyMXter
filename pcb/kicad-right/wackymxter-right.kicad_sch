@@ -1058,10 +1058,6 @@
     (stroke (width 0) (type default))
     (uuid 5460372f-ad99-4fb3-acf8-bdcf33995583)
   )
-  (wire (pts (xy 222.25 130.81) (xy 241.3 130.81))
-    (stroke (width 0) (type default))
-    (uuid 548ce8e4-9473-4109-be79-bc54ecb89526)
-  )
   (wire (pts (xy 207.01 60.96) (xy 207.01 80.01))
     (stroke (width 0) (type default))
     (uuid 5643e0e0-8e1b-4251-93f7-bbfa140e3a5a)
@@ -1101,6 +1097,10 @@
   (wire (pts (xy 171.45 54.61) (xy 181.61 54.61))
     (stroke (width 0) (type default))
     (uuid 7cb38f2a-7ef3-4fe3-9cd9-5eb056c1cae2)
+  )
+  (wire (pts (xy 222.25 130.81) (xy 241.3 130.81))
+    (stroke (width 0) (type default))
+    (uuid 816a4870-d721-4b14-9944-7a74fb5cb4db)
   )
   (wire (pts (xy 222.25 92.71) (xy 232.41 92.71))
     (stroke (width 0) (type default))
@@ -1169,10 +1169,6 @@
   (wire (pts (xy 191.77 54.61) (xy 201.93 54.61))
     (stroke (width 0) (type default))
     (uuid b3a771a6-ebcd-4e03-94b1-99f0fafbfa14)
-  )
-  (wire (pts (xy 227.33 118.11) (xy 228.6 118.11))
-    (stroke (width 0) (type default))
-    (uuid b893aee8-327d-4e7a-b6bb-7eae9f0bc419)
   )
   (wire (pts (xy 176.53 60.96) (xy 176.53 80.01))
     (stroke (width 0) (type default))
@@ -1251,16 +1247,16 @@
     (uuid 41c248f7-41bb-42d7-8d72-437162c36cb6)
   )
   (text_box "Mounting Holes\n"
-    (at 39.37 93.98 0) (size 17.78 53.34)
+    (at 39.37 93.98 0) (size 17.78 52.07)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 7ebaa050-716a-4203-9382-7d96375d5eb6)
   )
 
-  (text "Screen Mounting\n" (at 40.64 130.81 0)
+  (text "Screen Mounting" (at 40.64 135.89 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 12548525-413d-47dc-b8dd-a31bcdf12ba8)
+    (uuid 589006ce-35d3-44e8-b0eb-46d28657341d)
   )
 
   (global_label "row0" (shape input) (at 241.3 54.61 0) (fields_autoplaced)
@@ -1288,13 +1284,6 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 12ef2c70-2ffd-4f5a-b6a1-7a3c52b67fcb)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 207.01 24.6525 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "TX0" (shape input) (at 109.22 50.8 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 140d3c8b-47e1-4de0-82a1-b7ff0224ad26)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 115.5918 50.8 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -1379,6 +1368,13 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 4ba48db6-cb88-4389-8d2e-988d8c6bfe28)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 227.33 24.6525 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "TX0" (shape input) (at 109.22 53.34 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 590c2849-4c17-4317-a0a1-2cab5b3ace63)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 115.5918 53.34 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -1515,6 +1511,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "RX0" (shape input) (at 109.22 50.8 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b9cb5d30-9604-4eb4-a2af-3dbec5807091)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 115.8942 50.8 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "B1" (shape input) (at 68.58 69.85 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid bf8f29dc-9afc-4b59-b847-39dde262449a)
@@ -1541,13 +1544,6 @@
     (uuid fd410d68-1a40-4114-8723-f43cf39c72ce)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 25.5596 64.77 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "RX0" (shape input) (at 109.22 53.34 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid fd998dbd-4cc4-4413-810e-16263cf6acd9)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 115.8942 53.34 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "SDA" (shape input) (at 33.02 36.83 180) (fields_autoplaced)
@@ -1582,7 +1578,7 @@
     (pin "1" (uuid 2bdf3bbd-593d-46a2-bf8b-7b5478a35079))
     (pin "2" (uuid 62736e66-64cd-4dc3-ae7e-320d80f851a4))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D30") (unit 1)
         )
@@ -1614,7 +1610,7 @@
     (pin "1" (uuid dd96d2ba-7ef4-4972-8681-e519e4ba227e))
     (pin "2" (uuid b173ff18-add4-4f84-8609-005a65fd4fb6))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D14") (unit 1)
         )
@@ -1640,7 +1636,7 @@
     (pin "1" (uuid ab4bf0bc-887e-4c77-b7c3-9ac28a54dad2))
     (pin "2" (uuid 896c297f-dbcd-416a-bb10-b97f17e00c74))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S19") (unit 1)
         )
@@ -1672,7 +1668,7 @@
     (pin "1" (uuid 715b885c-82ac-4947-89fa-05a4d2daa735))
     (pin "2" (uuid 597dd0d6-31d4-483b-be1b-12225e22b708))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D22") (unit 1)
         )
@@ -1704,7 +1700,7 @@
     (pin "1" (uuid e0c22d59-6d99-4962-92c3-db0d0c07c275))
     (pin "2" (uuid 45d550f6-a5f3-4cee-b39a-7e3871fe4e04))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D2") (unit 1)
         )
@@ -1730,7 +1726,7 @@
     (pin "1" (uuid e6221d73-6674-4dc7-84b7-acba4c7f8738))
     (pin "2" (uuid 6a9d9dfc-a762-4313-8cf2-77f39395499e))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S21") (unit 1)
         )
@@ -1754,7 +1750,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "H5") (unit 1)
         )
@@ -1778,7 +1774,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "H1") (unit 1)
         )
@@ -1810,7 +1806,7 @@
     (pin "1" (uuid af9ed528-2b56-497b-b9f0-c042aa1c25ae))
     (pin "2" (uuid 6315158f-8603-4940-aac1-a2707d8b425d))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D4") (unit 1)
         )
@@ -1842,7 +1838,7 @@
     (pin "1" (uuid 932216b2-0cba-4a71-b0d4-1aace3a597cb))
     (pin "2" (uuid 19465037-018b-466d-a91a-221a40102fc3))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D3") (unit 1)
         )
@@ -1874,7 +1870,7 @@
     (pin "1" (uuid 3546d1c0-c4dc-43a0-b4c7-76da01e3e658))
     (pin "2" (uuid 0cdc58a8-a99f-4c37-bf00-6c0504548672))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D12") (unit 1)
         )
@@ -1900,7 +1896,7 @@
     (pin "1" (uuid c6ddff2e-5395-4c84-b67a-634b6cecc0e8))
     (pin "2" (uuid a7b54d7d-d997-42e3-b2e0-c2a4ad7ff92c))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S34") (unit 1)
         )
@@ -1926,7 +1922,7 @@
     (pin "1" (uuid 9cbd7169-c70e-4d13-aac3-a7fb5e9a97f6))
     (pin "2" (uuid 4417fd5f-ed6e-4c63-804e-b1059a9e056d))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S2") (unit 1)
         )
@@ -1952,7 +1948,7 @@
     (pin "1" (uuid 928b5027-7554-4708-adbb-d1cce3fce1c9))
     (pin "2" (uuid 8b7ae082-66a0-4d6a-a7f1-2b71c567579a))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S29") (unit 1)
         )
@@ -1984,7 +1980,7 @@
     (pin "1" (uuid 9be1021a-6e63-47ff-8665-8d9276a4830e))
     (pin "2" (uuid 9461b460-eb6f-4596-8c28-ebdcac6153c9))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D11") (unit 1)
         )
@@ -2010,7 +2006,7 @@
     (pin "1" (uuid f821fb37-d910-48c7-bf05-b1cc6c9bb448))
     (pin "2" (uuid 5eb67b49-1cb9-49ce-81b0-8f644d8b3a71))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S4") (unit 1)
         )
@@ -2035,7 +2031,7 @@
     )
     (pin "1" (uuid 18ac5f2a-a826-4431-a4e8-556c997b54b5))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR017") (unit 1)
         )
@@ -2061,7 +2057,7 @@
     (pin "1" (uuid 803b2b5f-1981-4400-b4f4-5cf1246cd19f))
     (pin "2" (uuid 518f86c3-2955-430c-96f5-752a71409085))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S9") (unit 1)
         )
@@ -2087,7 +2083,7 @@
     (pin "1" (uuid 89169cf8-cc30-4522-ac6d-e003e4db41a5))
     (pin "2" (uuid ba2d8323-c861-403a-9f79-4bb394b45f49))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S7") (unit 1)
         )
@@ -2119,7 +2115,7 @@
     (pin "1" (uuid a545a202-486f-4f02-8a53-5806062f14c8))
     (pin "2" (uuid 3833cbd3-2f02-4dec-96f0-3b274058201d))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D29") (unit 1)
         )
@@ -2151,7 +2147,7 @@
     (pin "1" (uuid c9befe72-f82b-4d3a-acc0-d04143f775ea))
     (pin "2" (uuid 4c355740-0ef4-4ab1-9cd4-c28dec82b674))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D21") (unit 1)
         )
@@ -2176,7 +2172,7 @@
     )
     (pin "1" (uuid 7c33d62e-4996-40cc-9fc7-606314f89d27))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR015") (unit 1)
         )
@@ -2200,7 +2196,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "H3") (unit 1)
         )
@@ -2226,7 +2222,7 @@
     (pin "1" (uuid d9dae173-c774-4a5f-928d-f1c4c6b5ff84))
     (pin "2" (uuid 95f6fd3c-d084-40af-844d-6743e1706cb5))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S15") (unit 1)
         )
@@ -2252,7 +2248,7 @@
     (pin "1" (uuid c1a3babb-c920-4326-a001-f697696ef1f8))
     (pin "2" (uuid 11352049-0bf9-4749-acd7-a525856bd751))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S32") (unit 1)
         )
@@ -2280,7 +2276,7 @@
     (pin "1" (uuid f6bb3494-0bb2-4ac6-80e1-f9f6dbc65e56))
     (pin "3" (uuid a44fdfeb-f26e-4acd-a245-461914b4937e))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "J1") (unit 1)
         )
@@ -2306,7 +2302,7 @@
     (pin "1" (uuid 71d3a2bb-a2aa-4bf5-bf10-33473c9649de))
     (pin "2" (uuid 0178952f-2b4e-4377-9a6b-8eaac3ea78a7))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S11") (unit 1)
         )
@@ -2338,7 +2334,7 @@
     (pin "1" (uuid cdabafc5-3480-45c2-b5fd-3de13f9c31bf))
     (pin "2" (uuid 07971b5c-2490-4d50-830a-758d53225d17))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D18") (unit 1)
         )
@@ -2370,7 +2366,7 @@
     (pin "1" (uuid d16d9948-8995-40cc-b5d2-6cd763cc8406))
     (pin "2" (uuid 9aa249fe-e0ec-497c-98dd-c818ebe6bfba))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D23") (unit 1)
         )
@@ -2402,33 +2398,9 @@
     (pin "1" (uuid e4086067-3d35-49ff-9869-9cadbf2ab726))
     (pin "2" (uuid fc72b90f-ab7f-4a8b-84fd-608e01adf6b5))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D20") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 44.45 138.43 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 596572f6-7276-4e5f-8932-67dca24ebd02)
-    (property "Reference" "H8" (at 46.99 138.43 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 46.99 139.7 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (at 44.45 138.43 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 44.45 138.43 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "wackymxter"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "H8") (unit 1)
         )
       )
     )
@@ -2452,7 +2424,7 @@
     (pin "1" (uuid 3c0c9b40-4523-40b2-abf9-a857da6bd79b))
     (pin "2" (uuid f5d1e07a-470a-4d84-aa89-7098d544c51c))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S6") (unit 1)
         )
@@ -2478,7 +2450,7 @@
     (pin "1" (uuid a32de1a4-2d62-4c72-8bde-2a6b40414eef))
     (pin "2" (uuid a9fae2bb-5c0f-4ca1-aad7-627564884ea0))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S30") (unit 1)
         )
@@ -2510,7 +2482,7 @@
     (pin "1" (uuid 3829e761-d7d2-4d1a-adcd-40767462acf1))
     (pin "2" (uuid 92a22219-087a-49a0-acc1-976a40251d1b))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D33") (unit 1)
         )
@@ -2542,7 +2514,7 @@
     (pin "1" (uuid 8d54c793-38ee-4547-86ed-354a40bab52c))
     (pin "2" (uuid 01d58548-c672-44f6-8977-0eb138fcb7b1))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D28") (unit 1)
         )
@@ -2574,7 +2546,7 @@
     (pin "1" (uuid 94b81a5c-f128-4ef7-974e-10595fe252e9))
     (pin "2" (uuid 6c22edea-271a-4534-acd9-4ec699ed1599))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D6") (unit 1)
         )
@@ -2606,7 +2578,7 @@
     (pin "1" (uuid 6b83f044-095e-4a12-80b7-383d9c067934))
     (pin "2" (uuid c13d4893-84db-4392-89f5-2fad53ccf99c))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D32") (unit 1)
         )
@@ -2638,7 +2610,7 @@
     (pin "1" (uuid 53b1e497-2141-41ad-9832-c74c91f1152e))
     (pin "2" (uuid c4967ef2-6146-43fe-9e8c-7f3c50d8778e))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D16") (unit 1)
         )
@@ -2670,7 +2642,7 @@
     (pin "1" (uuid 40796da3-78ad-4cad-b270-bb480f6f0e7f))
     (pin "2" (uuid 79cd6761-0226-4060-b813-9c3c64cc3599))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D15") (unit 1)
         )
@@ -2696,7 +2668,7 @@
     (pin "1" (uuid 2638f7aa-25af-4fe4-8c99-09d25571cdbb))
     (pin "2" (uuid dfe5b454-294c-4720-9223-4919b96fbad8))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S20") (unit 1)
         )
@@ -2728,7 +2700,7 @@
     (pin "1" (uuid 84ce50e8-36d3-4ccd-85f2-735d61c8f234))
     (pin "2" (uuid 780d8959-3bcc-48e1-87cc-bc43c402a066))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D26") (unit 1)
         )
@@ -2754,7 +2726,7 @@
     (pin "1" (uuid 0a173706-123c-4368-b90d-eb69ee4eabea))
     (pin "2" (uuid 639940d2-0201-4f9a-86da-b58cf1166f14))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S22") (unit 1)
         )
@@ -2786,7 +2758,7 @@
     (pin "1" (uuid f433551e-5b2a-4017-a6a1-ad55e2556bda))
     (pin "2" (uuid 16e6ffa2-5836-411b-be32-4883a7a4cccb))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D1") (unit 1)
         )
@@ -2812,7 +2784,7 @@
     (pin "1" (uuid eb55a358-ca77-4721-8fa0-1335792fce80))
     (pin "2" (uuid aacc23d3-b3a0-44e4-b422-818b7f3d9792))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S23") (unit 1)
         )
@@ -2844,7 +2816,7 @@
     (pin "1" (uuid 91c2be42-1118-4ae3-88f1-49ba8906e753))
     (pin "2" (uuid dd5edde5-eed0-4c45-a316-81870490b63d))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D7") (unit 1)
         )
@@ -2876,7 +2848,7 @@
     (pin "1" (uuid bec9b8d1-1233-4c2b-bc96-5b506b2402be))
     (pin "2" (uuid bf333b4b-0b77-41c5-b0a1-e5d04e728ad6))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D8") (unit 1)
         )
@@ -2901,7 +2873,7 @@
     )
     (pin "1" (uuid 8ab40398-b410-4ac7-b439-36b58c42b949))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR01") (unit 1)
         )
@@ -2933,7 +2905,7 @@
     (pin "1" (uuid a07396fc-6c7e-4174-98d5-4111d3150fb7))
     (pin "2" (uuid 1e3ad2aa-c041-4dee-826b-32568797e5b9))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D24") (unit 1)
         )
@@ -2959,9 +2931,33 @@
     (pin "1" (uuid f9ca8c2c-1dc6-4440-a4b3-877b1cfe893e))
     (pin "2" (uuid 4b5dae52-4012-46f2-b166-355bf7ad5a27))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S28") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 44.45 143.51 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9661ea9b-0d5a-4502-bd46-9b8c9120ec53)
+    (property "Reference" "H9" (at 46.99 143.51 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 46.99 144.78 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (at 44.45 143.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 44.45 143.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "wackymxter-right"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "H9") (unit 1)
         )
       )
     )
@@ -2983,33 +2979,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "H2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 44.45 133.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9bce45cd-b468-4eae-8c95-548c8c0b0cc5)
-    (property "Reference" "H7" (at 46.99 133.35 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 46.99 134.62 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (at 44.45 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 44.45 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "wackymxter"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "H7") (unit 1)
         )
       )
     )
@@ -3032,7 +3004,7 @@
     )
     (pin "1" (uuid 693c99cc-d275-43b4-81cb-0d50e4049305))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR02") (unit 1)
         )
@@ -3058,7 +3030,7 @@
     (pin "1" (uuid be0f6624-4623-41b7-8eb0-86c7302852ad))
     (pin "2" (uuid d546437b-1981-4d89-b291-448e9d1bbeba))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S13") (unit 1)
         )
@@ -3084,7 +3056,7 @@
     (pin "1" (uuid b3f2782d-b825-48dc-8eb0-6ca5b19852de))
     (pin "2" (uuid 0d2510fa-f338-4062-b28e-5eba55de50e3))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S1") (unit 1)
         )
@@ -3109,7 +3081,7 @@
     )
     (pin "1" (uuid 94d94bcb-3cc8-49e9-88c5-9ab49e169052))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR03") (unit 1)
         )
@@ -3141,7 +3113,7 @@
     (pin "1" (uuid d2aad21d-5815-432e-958c-0e58d7f6da12))
     (pin "2" (uuid c4860dbe-c659-49ee-835c-95ef92a712af))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D27") (unit 1)
         )
@@ -3173,7 +3145,7 @@
     (pin "1" (uuid 34d1b017-1b05-4b7d-8955-e74b73821ac2))
     (pin "2" (uuid 5beb430f-450f-4c9c-b6ee-b22de0b9c0af))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D9") (unit 1)
         )
@@ -3205,7 +3177,7 @@
     (pin "1" (uuid 018d77d5-a685-4eec-b794-19cae64461cc))
     (pin "2" (uuid 8590e9ec-b744-4c61-ba39-8ea8dc797322))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D25") (unit 1)
         )
@@ -3237,7 +3209,7 @@
     (pin "1" (uuid 1b15489d-186e-4160-9239-67d3bf720720))
     (pin "2" (uuid a0d321a4-2514-419c-9cf4-3c866c727436))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D31") (unit 1)
         )
@@ -3263,7 +3235,7 @@
     (pin "1" (uuid f04c18e1-c0f4-4d50-8eff-e42e098e2921))
     (pin "2" (uuid d5e939cc-6480-4e50-aa2b-6ce33190ea21))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S33") (unit 1)
         )
@@ -3330,7 +3302,7 @@
     (pin "2" (uuid 88a443dc-bb87-4f22-b8f2-1fa7fce444eb))
     (pin "42" (uuid 028d5f45-d4ee-411d-b19a-3e3f807d22c6))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "U1") (unit 1)
         )
@@ -3355,7 +3327,7 @@
     )
     (pin "1" (uuid 43ca67b5-83da-418c-84bc-58dbc3a2e158))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR014") (unit 1)
         )
@@ -3380,7 +3352,7 @@
     )
     (pin "1" (uuid 46857f01-3c39-469d-8b7a-e6ead0afb69b))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR016") (unit 1)
         )
@@ -3406,7 +3378,7 @@
     (pin "1" (uuid 53936240-35f2-4136-b7e0-9e36081d05ea))
     (pin "2" (uuid 1e89aa87-d723-4eed-8c44-96bd80a98612))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S27") (unit 1)
         )
@@ -3430,7 +3402,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "H4") (unit 1)
         )
@@ -3462,7 +3434,7 @@
     (pin "1" (uuid 37f6f20f-bdd5-4314-976c-79ad9d09fbf6))
     (pin "2" (uuid fcea1ddb-3000-4b55-9c2e-558404692892))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D10") (unit 1)
         )
@@ -3488,9 +3460,33 @@
     (pin "1" (uuid 121ab9fc-a8d1-4995-b187-684ad176468a))
     (pin "2" (uuid c49ed779-6d8b-42ea-9670-5cf760395111))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 44.45 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid cc1c5c0c-69be-4fdc-873d-1dbb923e906f)
+    (property "Reference" "H7" (at 46.99 130.81 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 46.99 132.08 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (at 44.45 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 44.45 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "wackymxter-right"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "H7") (unit 1)
         )
       )
     )
@@ -3520,7 +3516,7 @@
     (pin "1" (uuid 7109d5a9-edfa-4cdd-9a90-287bb9591889))
     (pin "2" (uuid 9ac96005-8d68-4fe6-b5e4-9f95f997b519))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D34") (unit 1)
         )
@@ -3546,7 +3542,7 @@
     (pin "1" (uuid fe9d8857-00ed-4830-afa4-88a5cbe8c9b4))
     (pin "2" (uuid e5a4fd91-b0c3-4e16-8f43-5e1c0da15b92))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S17") (unit 1)
         )
@@ -3572,7 +3568,7 @@
     (pin "1" (uuid 7fb74f64-26b9-4929-8bf7-e67835d7f2dc))
     (pin "2" (uuid 83ae7f5e-306f-4937-9df7-19642b7627a1))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S12") (unit 1)
         )
@@ -3598,33 +3594,9 @@
     (pin "1" (uuid 89154095-ce6a-4aa4-9e7c-82a457a63c43))
     (pin "2" (uuid 8b630d82-c477-494f-9a25-1e233d093de1))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 44.45 143.51 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d16acf3d-1fa3-4af8-97aa-501f72cb406b)
-    (property "Reference" "H9" (at 46.99 143.51 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 46.99 144.78 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (at 44.45 143.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 44.45 143.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "wackymxter"
-        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
-          (reference "H9") (unit 1)
         )
       )
     )
@@ -3648,7 +3620,7 @@
     (pin "1" (uuid 70164bfc-6232-4ab5-9402-6f5629600dc4))
     (pin "2" (uuid d0bb554c-4774-4fc3-b720-56a11c788c84))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S16") (unit 1)
         )
@@ -3673,7 +3645,7 @@
     )
     (pin "1" (uuid 62679466-8be3-4eba-ae4c-e0af08a6a6af))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR011") (unit 1)
         )
@@ -3699,7 +3671,7 @@
     (pin "1" (uuid 8be0d77b-6f45-42b9-bceb-5e702609e671))
     (pin "2" (uuid 9fb373dc-2106-4ad1-a066-a94d2b4587fe))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S14") (unit 1)
         )
@@ -3725,7 +3697,7 @@
     (pin "1" (uuid 4115c1fd-c3a1-43e5-adc4-3b8e4ecb4256))
     (pin "2" (uuid c5439036-2731-4f0d-affe-8d89a00ccd86))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S24") (unit 1)
         )
@@ -3749,7 +3721,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "H6") (unit 1)
         )
@@ -3775,7 +3747,7 @@
     (pin "1" (uuid a79e455d-d193-46a3-87d2-91aa8e20caea))
     (pin "2" (uuid 11504829-1d23-4572-8688-0e14ee654537))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S26") (unit 1)
         )
@@ -3807,7 +3779,7 @@
     (pin "1" (uuid 6d62d855-962c-4ed6-a726-1c05ff26978a))
     (pin "2" (uuid 36fdd3bb-9746-4c8b-abc2-4fafd638b632))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D13") (unit 1)
         )
@@ -3832,7 +3804,7 @@
     )
     (pin "1" (uuid 3d210c9c-03c4-43fe-8fc7-c9be5efffd69))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR07") (unit 1)
         )
@@ -3860,7 +3832,7 @@
     (pin "4" (uuid f51b8aa0-8734-4f22-a815-157a7708bf2f))
     (pin "2" (uuid 4648988e-a977-477b-9160-7f04dd07a955))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "U3") (unit 1)
         )
@@ -3886,7 +3858,7 @@
     (pin "1" (uuid 6d8ccc26-ea4f-4056-be37-9444fa7b8eb9))
     (pin "2" (uuid 20d7a37e-688a-4c41-ad62-6b6db4553614))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S18") (unit 1)
         )
@@ -3918,7 +3890,7 @@
     (pin "1" (uuid 39840939-b6cf-48b1-97ff-b5482355f336))
     (pin "2" (uuid 441b9028-1323-447c-8040-aa7a2300f5aa))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D5") (unit 1)
         )
@@ -3950,7 +3922,7 @@
     (pin "1" (uuid beafbc2f-4f0e-4abe-a65b-2d02c2940700))
     (pin "2" (uuid 356b68d3-674a-4b83-aafd-403ddbb0b780))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D17") (unit 1)
         )
@@ -3976,7 +3948,7 @@
     (pin "1" (uuid 7c88ebf9-f974-4154-adf4-b13a1f670051))
     (pin "2" (uuid 840627cc-aa7c-48ce-ba28-72e4d30a87ed))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S5") (unit 1)
         )
@@ -4001,9 +3973,33 @@
     )
     (pin "1" (uuid c9bd0f09-317c-4812-be33-7c2c4f495004))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "#PWR08") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 44.45 138.43 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f16bcaca-00fb-403e-8ffc-f4a10b4d801e)
+    (property "Reference" "H8" (at 46.99 138.43 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 46.99 139.7 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (at 44.45 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 44.45 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "wackymxter-right"
+        (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
+          (reference "H8") (unit 1)
         )
       )
     )
@@ -4027,7 +4023,7 @@
     (pin "1" (uuid 3e9af528-ede9-421a-9d96-9e907762107a))
     (pin "2" (uuid 1d2084dd-0133-4033-ad11-ee4cdd07df4e))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S31") (unit 1)
         )
@@ -4056,7 +4052,7 @@
     (pin "C" (uuid aaa54f13-80dd-40d0-84c6-2e6b2f5bdf57))
     (pin "S1" (uuid 921b3734-804f-4f9d-923a-561ee9504055))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "ROT1") (unit 1)
         )
@@ -4082,7 +4078,7 @@
     (pin "1" (uuid 2493bf54-af44-43c6-9e99-207ebf409b34))
     (pin "2" (uuid c82a9d2a-2d40-4ec8-93e2-577fc410d1f8))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S8") (unit 1)
         )
@@ -4109,7 +4105,7 @@
     (pin "1" (uuid bcb0c30f-7bd2-4718-9dc8-3336b888d2e4))
     (pin "3" (uuid 6800f970-5cca-45bf-8356-7f45d715670e))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "J2") (unit 1)
         )
@@ -4135,7 +4131,7 @@
     (pin "1" (uuid e32c4ec3-0d0e-4a7e-9968-36276fd8bd7b))
     (pin "2" (uuid c1c36dc1-b058-4941-8d64-7a3a3789da37))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "S25") (unit 1)
         )
@@ -4167,7 +4163,7 @@
     (pin "1" (uuid 5c18705c-514b-4d77-8535-211bbd79808e))
     (pin "2" (uuid 474b10df-1709-4f31-9468-2afaadc781b6))
     (instances
-      (project "wackymxter"
+      (project "wackymxter-right"
         (path "/1c50ef02-3643-49eb-b04a-aca250d80af7"
           (reference "D19") (unit 1)
         )
