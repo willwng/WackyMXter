@@ -7056,7 +7056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mcu:xiao-ble-smd-cutout"
+		(property "Footprint" "wackymxter:xiao-ble-smd-cutout"
 			(at 39.37 43.18 0)
 			(effects
 				(font
