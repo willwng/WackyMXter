@@ -1,3 +1,6 @@
 [submodule "zmk"]
 	path = zmk
 	url = https://github.com/willwng/WackyMXter-zmk-config
+[submodule "zmk-firmware"]
+	path = zmk-firmware
+	url = https://github.com/willwng/WackyMXter-zmk-config
