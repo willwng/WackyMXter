@@ -38,5 +38,5 @@ my custom keyboard.
 The power switch, JST connector, and LiPo battery are optional if you want the board to be wired (but this requires powering both halves)
 
 ## Notes
-- For the rotary encoder, be sure to get EC11(E) <- "E" being the key. I got an EC11(R) encoder and the legs didn't fit, causing me to clip them
+- Unless you update the footprint, be sure to get EC11(E) rotary encoder <- "E" being the key. I got an EC11(R) encoder and the legs didn't fit, causing me to clip them.
 - I messed up the placement of the JST connector - it stands higher than the hotswap sockets, so for a caseless build it is unfortunately too tall to be on the bottom. I ended up mounting it on the front, but backward (to not interfere with the power switch), so this required reversing the polarity of the batteries
